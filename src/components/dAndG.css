@@ -1,0 +1,111 @@
+.techSkills {
+    background: #fff;
+    padding: 3%;
+    width: 400px;
+    padding: 20px;
+    /* border: 1px solid rgb(44, 44, 44); */
+    border-radius: 7px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+}
+
+.techSkills ul {
+    display: block;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.techSkills ul li:not(:last-child) {
+    display: flex;
+    background-color: rgb(71, 133, 255);
+    margin-bottom: 16px;
+    color: rgb(255, 255, 255);
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    user-select: none;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(71, 132, 255, 0.739);
+    border-image: initial;
+    outline: none;
+    margin-top: -1px;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.techSkills ul li {
+    position: relative;
+}
+
+.techSkills ul li div span {
+    text-transform: capitalize;
+}
+
+.skill-input {
+    width: 100%;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 16px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(71, 132, 255, 0.739);
+    border-image: initial;
+
+    margin-top: -1px;
+    padding: 12px;
+    text-decoration: none;
+    position: relative;
+}
+
+.options {
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration: none;
+
+    top: 90%;
+    left: 0%;
+    z-index: 10;
+    width: 100%;
+    overflow-y: scroll;
+    min-height: 40px;
+    max-height: 180px;
+    border: 1px solid rgb(182, 182, 182);
+}
+
+.options div {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    border-bottom: 1px solid rgb(185, 185, 185);
+    padding: 10px;
+    margin-bottom: 1px;
+    background: rgb(246, 246, 246);
+}
+
+.close {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    margin-right: 5px;
+    padding: 6px 10px;
+    transform: translate(0%, -50%);
+    border-radius: 50%;
+}
+
+.close:hover {
+    background-color: rgb(45, 115, 255);
+}
