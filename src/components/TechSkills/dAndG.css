@@ -1,8 +1,9 @@
 .techSkills {
     background: #fff;
     padding: 3%;
-    width: 400px;
+    width: 700px;
     padding: 20px;
+    height: 325px;
     /* border: 1px solid rgb(44, 44, 44); */
     border-radius: 7px;
     box-shadow: 0 0 5px rgba(0, 0, 0, .1);
@@ -11,11 +12,17 @@
 .techSkills ul {
     display: block;
     list-style-type: none;
-    padding: 0;
+    padding: 10px;
     margin: 0;
+    /* column-count: 2; */
+    display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 305px;
 }
 
-.techSkills ul li:not(:last-child) {
+.techSkills ul .drag {
+    break-inside: avoid-column;
     display: flex;
     background-color: rgb(71, 133, 255);
     margin-bottom: 16px;
@@ -37,7 +44,9 @@
 }
 
 .techSkills ul li {
+    width: 312px;
     position: relative;
+    margin: 0 20px 0 0;
 }
 
 .techSkills ul li div span {
@@ -60,7 +69,7 @@
     border-image: initial;
 
     margin-top: -1px;
-    padding: 12px;
+    padding: 10.5px;
     text-decoration: none;
     position: relative;
 }
@@ -77,15 +86,18 @@
 
     top: 90%;
     left: 0%;
-    z-index: 10;
+    z-index: 1000;
     width: 100%;
     overflow-y: scroll;
     min-height: 40px;
-    max-height: 180px;
+    max-height: 120px;
     border: 1px solid rgb(182, 182, 182);
 }
 
 .options div {
+    z-index: 1000;
+
+    color: #000;
     font-weight: 500;
     font-size: 16px;
     line-height: 16px;
